@@ -1,4 +1,4 @@
-FROM debian:jessie-slim
+FROM debian:strech-slim
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install requirements
@@ -12,7 +12,7 @@ RUN apt-get update -yqq \
     && rm -rf \
     /tmp/* \
     /var/tmp/* \
-    /var/lib/apt/lists/* 
+    /var/lib/apt/lists/*
 
 RUN mkdir /sync
 
